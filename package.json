@@ -1,0 +1,21 @@
+{
+  "name": "devesh-singh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal engineering portfolio of Devesh Singh - Full-Stack Developer & AI Systems Builder",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "devesh-singh",
+    "langgraph",
+    "ai-agents",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "Devesh Singh <deveshsingh6986@gmail.com>",
+  "license": "MIT"
+}
