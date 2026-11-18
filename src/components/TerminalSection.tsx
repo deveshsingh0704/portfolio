@@ -29,10 +29,20 @@ export default function TerminalSection({ onOpenResume }: TerminalSectionProps) 
     },
   ]);
 
-  const bottomRef = useRef<HTMLDivElement | null>(null);
+  const outputContainerRef = useRef<HTMLDivElement | null>(null);
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (outputContainerRef.current) {
+      outputContainerRef.current.scrollTo({
+        top: outputContainerRef.current.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
   }, [history]);
 
   const executeCmd = (commandStr: string) => {
@@ -214,7 +224,10 @@ export default function TerminalSection({ onOpenResume }: TerminalSectionProps) 
         </div>
 
         {/* Command Output Log */}
-        <div className="p-5 sm:p-6 min-h-[300px] max-h-[420px] overflow-y-auto space-y-4">
+        <div
+          ref={outputContainerRef}
+          className="p-5 sm:p-6 min-h-[300px] max-h-[420px] overflow-y-auto space-y-4"
+        >
           {history.map((entry, idx) => (
             <div key={idx} className="space-y-1.5">
               <div className="flex items-center gap-2 text-xs">
@@ -224,7 +237,6 @@ export default function TerminalSection({ onOpenResume }: TerminalSectionProps) 
               <div className="pl-4">{entry.output}</div>
             </div>
           ))}
-          <div ref={bottomRef} />
         </div>
 
         {/* Quick Suggestion Chips */}
