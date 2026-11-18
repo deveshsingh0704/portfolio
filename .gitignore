@@ -1,10 +1,14 @@
 node_modules/
+.next/
+out/
+build/
+dist/
 .DS_Store
 Thumbs.db
 *.log
 .env
+.env*.local
 .vscode/
 .idea/
 get_urls.py
-*.pdf
-
+*.tsbuildinfo

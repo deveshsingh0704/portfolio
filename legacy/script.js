@@ -487,7 +487,16 @@ function runTerminalCmd(cmd) {
 
     case 'resume':
       openResumeModal();
-      responseEl.innerHTML = `<span class="text-emerald-400">Opening resume modal preview...</span>`;
+      responseEl.innerHTML = `
+        <div class="space-y-1">
+          <div class="text-emerald-400">Opening resume preview modal...</div>
+          <div class="text-xs text-slate-300">
+            • <a href="https://drive.google.com/file/d/1opRR4O4Qq5k8sIvQN32ycDLvozHbGWL5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">Open in Google Drive ↗</a>
+            <span class="text-slate-500 mx-1">|</span>
+            • <a href="https://drive.google.com/uc?export=download&id=1opRR4O4Qq5k8sIvQN32ycDLvozHbGWL5" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:underline">Direct Download ⬇</a>
+          </div>
+        </div>
+      `;
       break;
 
     case 'sudo hire':

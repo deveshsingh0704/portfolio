@@ -1,37 +1,49 @@
 # Devesh Singh — Software Engineer Portfolio 🚀
 
-> **Live Portfolio & Engineering Showcase**  
-> Full-Stack Web Development • LangGraph & AI Agents • Real-Time Systems • Competitive Problem Solving
+> **Next.js & Framer Motion Portfolio & Engineering Showcase**  
+> Autonomous AI Agent Workflows • Real-Time Distributed Systems • High-Frequency Streaming • Full-Stack Engineering
 
-This repository houses the personal portfolio of **Devesh Singh**, crafted to showcase real-world production projects, open-source pull requests, hackathon triumphs, and software engineering capabilities.
-
----
-
-## 🌟 Highlights & Features
-
-- **Modern Cyber-Minimalist Aesthetic**: Dark theme with frosted glassmorphism, ambient indigo/violet glows, custom grid patterns, and typography using *Inter*, *Plus Jakarta Sans*, and *JetBrains Mono*.
-- **Interactive Developer CLI**: In-browser simulated terminal supporting commands like `help`, `about`, `skills`, `projects`, `experience`, `contact`, `sudo hire`, and `clear`.
-- **Deep-Dive Project Modals**: Dynamic architectural modals for featured projects detailing **The Problem**, **The Solution**, and **Key Technical Architecture**.
-- **Integrated PDF Resume**: Downloadable directly (`resume.pdf`) and previewable in a custom modal without leaving the page.
-- **Categorized Project Filtering**: Filter smoothly between **All**, **AI & Agents**, **Full Stack & Web**, and **Systems & Hackathons**.
-- **Interactive Contact Workflow**: Direct email dispatch generator and 1-click clipboard copy for email and phone numbers with instant toast feedback.
-- **100% Zero-Build Dependency**: Runs natively in any browser; instantly deployable to GitHub Pages, Vercel, or Netlify.
+An award-winning, interactive digital portfolio crafted with inspiration from **[Assiko](https://assiko.com)** (Awwwards Site of the Day by eDesign Interactive). Rebuilt from plain HTML into a modern, fluid **Next.js (App Router)** application powered by **Framer Motion**, **Tailwind CSS**, and **Lucide React**.
 
 ---
 
-## 🛠️ Tech Stack & Ecosystem
+## 🌟 Assiko-Inspired Design & Visual Identity
 
-- **Frontend Core**: HTML5, CSS3, Modern JavaScript (ES6+)
-- **Styling**: Tailwind CSS, Custom Glassmorphism, Micro-Animations
-- **Icons**: Lucide Icons
-- **Typography**: Google Fonts (Inter, Plus Jakarta Sans, JetBrains Mono)
-- **Deployment Ready**: GitHub Pages (`gh-pages`), Vercel, Netlify
+- **High-Energy Pyrotechnic Palette**:
+  - **Assiko Neon Spark Yellow** (`#ffde00`) – Iconic celebration and highlight accent
+  - **Assiko Neon Mint** (`#00ffa2`) – Available for hire & metrics glow
+  - **Assiko Fire Orange / Coral** (`#ff652f`) – SOS, hackathons, and high-impact badges
+  - **Assiko Electric Cyan** (`#00e5ff`) – Streaming & real-time telemetry
+  - **Assiko Deep Midnight** (`#0c0c0e`, `#141418`, `#1a1a20`) – Deep contrast sky canvas
+- **Interactive Pyrotechnic Particle Canvas (`SparkCanvas`)**:
+  - Live cursor tracking emitting vibrant pyrotechnic embers and sparks
+  - Ambient floating stars and twinkling particles
+  - Interactive click detonations radiating outwards with physics decay
+- **Fluid Micro-Interactions & Spring Physics**:
+  - Buttery smooth card hovering with neon border illumination
+  - Smooth tabbed project filtering with layout animations
+  - Architectural deep-dive modal (`Problem`, `Solution`, `Key Technical Architecture`)
+  - Integrated Google Drive CV preview player (`/preview`) and 1-click direct download
+  - Interactive Developer Terminal CLI with command execution, auto-scroll, and confetti triggers
 
 ---
 
-## 📂 Featured Projects Included
+## 🛠️ Modern Tech Stack
 
-1. **[MeetMind](https://github.com/deveshsingh0704/meetingMingenerator)**: AI-Powered Meeting Assistant using Groq Whisper, Groq Llama 3, Next.js, Firebase Auth, Firestore, and jsPDF export.
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router, Server Components & Client Hooks)
+- **Language**: TypeScript 5
+- **Animations & Physics**: [Framer Motion](https://www.framer.com/motion/)
+- **Visual Effects**: Custom HTML5 Canvas Pyrotechnic Particles & [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/) with custom Assiko color extensions & custom scrollbars
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: Google Fonts (Syne, Plus Jakarta Sans, Inter, JetBrains Mono)
+- **CV / Resume**: Integrated with Google Drive viewer and direct download
+
+---
+
+## 📂 Featured Engineering Projects
+
+1. **[MeetMind](https://github.com/deveshsingh0704/meetingMingenerator)**: AI Meeting Assistant using Groq Whisper, Groq Llama 3, Next.js, Firebase Auth, Firestore, and jsPDF export.
 2. **[Voice AI Todo Agent](https://github.com/deveshsingh0704/voice-agent)**: Hands-free task management with browser speech recognition, LangGraph StateGraph, Gemini tool calling, and MongoDB persistence.
 3. **[Stock Tracker](https://github.com/deveshsingh0704/Stock-Tracker)**: High-frequency market dashboard streaming live stock prices over WebSockets via Finnhub with interactive Recharts.
 4. **[AEGIS – Women's Safety App](https://github.com/himkar-cmd/Women-Safety.git)** *(Google Collab Hackathon Winner)*: Emergency SOS broadcasting live GPS, automated Twilio phone call dispatch, and emergency SMS alerts. [Live Demo](https://aegis1234.netlify.app/)
@@ -41,50 +53,29 @@ This repository houses the personal portfolio of **Devesh Singh**, crafted to sh
 
 ---
 
-## 🚀 Running Locally
+## 🚀 Development & Deployment
 
-You don't need any complex build tooling to view or test the site!
-
-### Option 1: Direct Browser
-Simply double-click or open `index.html` in any web browser (Chrome, Edge, Firefox, Safari).
-
-### Option 2: Local Server via Node / npx
+### 1. Install Dependencies
 ```bash
-# Using npx serve
-npx serve .
-
-# Or using Python's built-in HTTP server
-python -m http.server 3000
+pnpm install
+# or npm install / yarn install
 ```
-Then visit `http://localhost:3000` in your browser.
 
----
+### 2. Run Local Development Server
+```bash
+pnpm dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🌐 Deploying to GitHub Pages (Free)
+### 3. Production Build
+```bash
+pnpm build
+pnpm start
+```
 
-1. Push this repository to your GitHub account:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio release"
-   git branch -M main
-   git remote add origin https://github.com/deveshsingh0704/deveshsingh0704.github.io.git
-   git push -u origin main
-   ```
-2. In your GitHub repository:
-   - Go to **Settings** > **Pages**
-   - Under **Build and deployment** > **Source**, choose **Deploy from a branch**
-   - Select branch `main` and folder `/(root)`
-   - Click **Save**
-3. Your site will be live at `https://deveshsingh0704.github.io/` within 60 seconds!
-
----
-
-## 📬 Contact & Socials
-
-- **Email**: [deveshsingh6986@gmail.com](mailto:deveshsingh6986@gmail.com)
-- **Phone**: [+91-911-012-7769](tel:+919110127769)
-- **GitHub**: [github.com/deveshsingh0704](https://github.com/deveshsingh0704)
-- **LinkedIn**: [linkedin.com/in/devesh-singh-542483318](https://linkedin.com/in/devesh-singh-542483318/)
-- **LeetCode**: [leetcode.com/u/HonouredOneXdeveshSingh0704](https://leetcode.com/u/HonouredOneXdeveshSingh0704/)
-- **Location**: Bengaluru, India
+### 4. Deploy to Vercel / Netlify
+This repository is pre-configured for zero-config one-click deployment on **Vercel** or **Netlify**:
+- Connect your GitHub repository to Vercel
+- Framework Preset: **Next.js**
+- Build Command: `next build`
+- Output Directory: `.next`

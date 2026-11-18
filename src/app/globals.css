@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0c0e;
+  --foreground: #f8fafc;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c0e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #282832;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffde00;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Color */
+::selection {
+  background-color: #ffde00;
+  color: #000000;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-glow-yellow {
+    text-shadow: 0 0 20px rgba(255, 222, 0, 0.4);
+  }
+  .text-glow-mint {
+    text-shadow: 0 0 20px rgba(0, 255, 162, 0.4);
+  }
+}
